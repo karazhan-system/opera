@@ -3,8 +3,8 @@ const api = new Router()
 
 api.prefix('/api')
 
-const nlp = require('./api.nlp')
+const img = require('./api.img')
 
-api.use('/nlp', nlp.routes(), nlp.allowedMethods())
+api.use('/img', img.routes(), img.allowedMethods())
 
 module.exports = api

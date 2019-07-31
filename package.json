@@ -10,10 +10,12 @@
   "license": "ISC",
   "dependencies": {
     "@koa/cors": "^3.0.0",
+    "ali-oss": "^6.1.1",
     "axios": "^0.19.0",
     "koa": "^2.7.0",
     "koa-bodyparser": "^4.2.1",
     "koa-logger": "^3.2.1",
+    "koa-parameter": "^3.0.1",
     "koa-router": "^7.4.0"
   }
 }
