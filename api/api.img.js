@@ -4,6 +4,13 @@ const api = new Router()
 const { download, encodeSHA256 } = require('../core')
 
 api.post('/', async ctx => {
+  ctx.verifyParams({
+    urls: {
+      type: 'array',
+      itemType: 'string'
+    }
+  })
+
   const { urls } = ctx.request.body
   const result = {}
 
